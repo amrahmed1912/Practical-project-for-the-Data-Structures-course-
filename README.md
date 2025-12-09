@@ -27,6 +27,6 @@
 ## Author
 <p>
   <strong>Amr Ahmed Sayed Ali</strong> <br>
-  Student at Faculty of Computers and Information, Sinai University
-  interest in data structures and algorithms.
+  Student at the Faculty of Computers and Information, Sinai University. 
+  This project is part of my academic projects and personal learning archive.
 </p>
