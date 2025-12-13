@@ -1,32 +1,34 @@
-# Practical-project-for-the-Data-Structures-course
-## Project Overview
-<p>
-  This is a C++ console-based project that allows users to interact with and manage several fundamental data structures, including Arrays, Linked Lists, Stacks, and Queues. The project provides a simple menu-driven interface to perform common operations like insertion, deletion, and display of elements.  
-</p>
+## - Project Title  
+**Data Structure Management Program (Array – Linked List – Stack – Queue) Using C++**
 
-## Project Structure
-<p>
-  main.cpp – Contains the full program including implementations for Array, Linked List, Stack, Queue, and the main menu system.
-</p>
-  
-## Classes Implemented 
-<p>
-  Array – Fixed-size array with insert, delete, and display functions.<br>
-  LinkedList – Singly linked list with insert, delete, and display functions.<br>
-  Stack – Stack implemented using an array.<br>
-  Queue – Queue implemented using an array.<br>
-</p>
+---
 
-## Learning Outcomes
-<p>
-  Understanding of fundamental data structures and their operations.<br>
-  Practice with manual memory management (new and delete in Linked Lists).<br>
-  Strengthened knowledge of C++ programming, including arrays, pointers, and class design.<br>
-</p>
+## - Project Introduction  
+This project is an interactive console application that allows users to work with the most common basic data structures and perform essential operations on them, such as insertion, deletion, and display.
 
-## Author
+The project aims to understand how to manually construct these structures using pointers and functions, and how to design an interactive program that integrates multiple data structures into a single interface.
+
+---
+
+## - Project Objectives  
+- Practical application of data structures: **Array, Linked List, Stack, Queue**.  
+- Implementation of basic operations for each data structure.  
+- Practice using classes and organizing code across separate header and source files.  
+- Understanding how to build a **main menu** with structured **submenus** for user interaction.
+
+---
+
+## - Learning Outcomes
+
+ - Understanding of fundamental data structures and their operations.<br>
+ - Practice with manual memory management (new and delete in Linked Lists).<br>
+ - Strengthened knowledge of C++ programming, including arrays, pointers, and class design.<br>
+
+---
+
+## - Author
 <p>
-  <strong>Amr Ahmed Sayed Ali</strong> <br>
-  Student at Faculty of Computers and Information, Sinai University
-  interest in data structures and algorithms.
+  <strong>Amr Ahmed Sayed </strong> <br>
+  Student at the Faculty of Computers and Information, Sinai University. 
+  This project is part of my academic projects and personal learning archive.
 </p>
