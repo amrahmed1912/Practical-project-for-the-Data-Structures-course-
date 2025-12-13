@@ -42,6 +42,7 @@ void  LinkedList::deleteNode(int data) {
         return;
     }
 
+    // item at the begining
     if (head->data == data) {
         Node* toDelete = head;
         head = head->Next;
@@ -59,19 +60,27 @@ void  LinkedList::deleteNode(int data) {
         temp->Next = temp->Next->Next; 
         delete toDelete;
     }
+
+    else {
+        cout <<"Value not found\n";
+    }
+
 }
 
 void LinkedList::Display(){
-            Node* current = head;
-            if(head == NULL) cout<<"Linked list is empty!\n";
-            
-            cout<<"Linked List Element: ";
-            while(current != NULL){
-                cout<<current->data <<" ";
-                current = current->Next;
-            }
-            cout<<endl;
-        }
+    Node* current = head;
+    if(head == NULL){
+        cout<<"Linked list is empty!\n";
+        return;
+    }    
+    
+    cout<<"Linked List Element: ";
+    while(current != NULL){
+        cout<<current->data <<" ";
+        current = current->Next;
+    }
+    cout<<endl;
+}
 
 
 #endif

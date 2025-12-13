@@ -4,10 +4,12 @@
 #include <iostream>
 using namespace std;
 
+#define SIZE 100
+
 // =========== Queue Implementation ===========
 class Queue {
 private:
-    int arr[100];
+    int arr[SIZE];
     int front, rear;
 
 public:
@@ -15,33 +17,50 @@ public:
     void dequeue();
     void display();
     
-    Queue() : front(0), rear(0) {}
+    Queue() : front(-1), rear(-1) {}
 };
 
 void Queue::enqueue(int data) {
-    if (rear == 100) {
-        cout << "Queue is Full!\n";
-        return;
+
+    if(rear != SIZE-1){
+        if(front == -1 && rear == -1){
+            front++;
+            arr[++rear] = data;
+        }
+        else{
+            arr[++rear] = data;
+        }
     }
-    arr[rear++] = data;
-    cout << "Enqueued Successfully.\n";
+    else{
+        cout<<"Queue is Full!\n";
+    }
+
+    cout << "Enqueued Successfully...\n";
 }
 
 void Queue::dequeue() {
-    if (front == rear) {
+    if (front == -1 && rear == -1) {
         cout << "Queue is Empty!\n";
         return;
     }
-    cout << "Dequeued: " << arr[front++] << "\n";
+    
+    // last element
+    if (front == rear) {  
+        front = rear = -1;
+    } 
+    else{
+        cout << "Dequeued: " << arr[front++] << "\n";
+    }
+
 }
 
 void Queue::display() {
-    if (front == rear) {
+    if (front == -1 && rear == -1) {
         cout << "Queue is Empty!\n";
         return;
     }
     cout << "Queue Elements: ";
-    for (int i = front; i < rear; i++)
+    for (int i = front; i <= rear; i++)
         cout << arr[i] << " ";
     cout << endl;
 }

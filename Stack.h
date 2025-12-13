@@ -4,10 +4,12 @@
 #include <iostream>
 using namespace std;
 
+#define SIZE 100
+
 // =========== Stack Implementation ===========
 class Stack {
 private:
-    int arr[100];
+    int arr[SIZE];
     int top;
 
 public:
@@ -21,7 +23,7 @@ public:
 
 
 void Stack::push(int data) {
-    if (top == 99) {
+    if (top == SIZE-1) {
         cout << "Stack is Full!\n";
         return;
     }
